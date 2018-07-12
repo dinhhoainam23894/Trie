@@ -1,7 +1,7 @@
 
 # Hướng dẫn về Trie và một số ví dụ về vấn đề gặp phải - Chủ đề @ IIIT Hyderabad 
 
-Tôi sẽ viết trong bài viết này về Tries và khái niệm được sử dụng rộng rãi trong các loại thao tác bit. Chúng ta sẽ thấy 2-3 vấn đề mà trie rất hữu ích.
+Tôi sẽ viết trong bài viết này về Tries và khái niệm được sử dụng rộng rãi trong các loại thao tác nhỏ của vấn đề. Chúng ta sẽ thấy 2-3 vấn đề mà trie rất hữu ích.
 
 Đầu tiên chúng ta sẽ tìm hiểu xem trie là cái gì. Trie có thể lưu trữ thông tin về các khóa/số/chuỗi nhỏ gọn trong 1 cây.
 Các trie bao gồm các node , nơi mà mỗi nốt lưu trữ một ký tự/ bit. Chúng ta có thẻ chèn các chuỗi/số mới một cách phù hợp.
@@ -26,7 +26,7 @@ Trie là cấu trúc dữ liệu chúng ta sẽ sử dụng.Đầu tiên hãy xe
 
 ![][2]
 
-Vì vậy , chúng ta theo dõi đường dẫn của số mà chúng ta chèn , chúng ta không phải vẽ lại đường dẫn hiện có.
+Vì vậy , chúng ta theo dõi đường dẫn của số mà chúng ta cần chèn , chúng ta không phải vẽ lại đường dẫn hiện có.
 
 Chèn một khóa độ dài N lấy O (N) là log2 (MAX) trong đó MAX là số lớn nhất được chèn vào trong trie, bởi vì có số bit nhị phân log2 (MAX) tối đa trong một số.
 Bằng cách này, chúng ta lưu trữ tất cả dữ liệu về tất cả các số được chèn vào trie cho đến bây giờ.
@@ -37,7 +37,7 @@ Giả sử số Y của chúng ta là b1, b2… bn, trong đó b1, b2… là cá
 
 Quá nhiều truy vấn là log2(MAX).
 
-**Vấn đề 2**: Cho một mảng các số nguyên, tìm subarray với XOR tối đa.
+**Vấn đề 2**: Cho một mảng các số nguyên, tìm mảng con với XOR tối đa.
 **Giải pháp:**  
 Giả sử F (L, R) là XOR của mảng con từ L đến R.
 Ở đây chúng ta sử dụng đặc tính F (L, R) = F (1, R) XOR F (1, L-1). Làm như thế nào? Giả sử mảng con của chúng ta với XOR tối đa kết thúc ở vị trí i. Bây giờ, chúng ta cần tối đa hóa F (L, i). F (1, i) XOR F (1, L-1) trong đó L <= i. Giả sử, chúng ta đã chèn F (1, L-1) vào trie của chúng ta cho tất cả L <= i, thì đó chỉ là vấn đề1.

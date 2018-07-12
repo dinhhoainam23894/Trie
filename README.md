@@ -20,7 +20,7 @@ Giả sử chúng ta có một cấu trúc dữ liệu mà có thẻ đáp ứng
 1\. Chèn số X
 2\. Cho một biến Y, Tìm XOR lớn nhất của Y  với tất cả số được lưu đến tận bây giờ.
 
-Nếu chúng ta có cấu trúc dữ liệu, chúng ta sẽ chèn  số nguyên khi chúng ta đi,và với truy vấn loại 2 thì chúng ta sẽ tìm được XOR lớn nhất.
+Nếu chúng ta có cấu trúc dữ liệu, chúng ta sẽ chèn  số nguyên khi chúng ta đi và với truy vấn loại 2 thì chúng ta sẽ tìm được XOR lớn nhất.
 Trie là cấu trúc dữ liệu chúng ta sẽ sử dụng.Đầu tiên hãy xem cách mà chúng ta chèn phần tử vào trie.
 
 
@@ -109,7 +109,7 @@ Cập nhật:
 Một vấn đề khác khi sử dụng Trie (yay!: P). 
 [Vấn đề - B - Codeforces][7]
 
-**Vấn đề phụ**: Cho một nhóm các chuỗi không rỗng. Trong trò chơi, hai người chơi xây dựng từ với nhau, ban đầu từ đó trống. Các cầu thủ di chuyển lần lượt. Trong lượt của anh ta phải thêm một chữ cái vào cuối từ, từ kết quả phải là tiền tố của ít nhất một chuỗi từ nhóm. Một người chơi thua nếu anh ta không thể di chuyển.
+**Vấn đề phụ**: Cho một nhóm các chuỗi không rỗng. Trong trò chơi, hai người chơi xây dựng từ với nhau, ban đầu từ đó trống. Các người chơi di chuyển lần lượt. Trong lượt của anh ta phải thêm một chữ cái vào cuối từ, từ kết quả phải là tiền tố của ít nhất một chuỗi từ nhóm. Một người chơi thua nếu anh ta không thể di chuyển.
 
 Chúng ta cần phải tìm người chơi nào (thứ nhất hoặc thứ hai) có chiến lược chiến thắng.
 
